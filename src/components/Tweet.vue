@@ -1,6 +1,6 @@
 <template>
     <div class="tweet">
-        <img src="https://i.imgur.com/9yw1Fyw.jpg" class="profile" alt="profile" />
+        <img src="../assets/profile.jpg" class="profile" alt="profile" />
 
         <div class="body">
             <div class="top">
