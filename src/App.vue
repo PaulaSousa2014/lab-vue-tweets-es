@@ -3,8 +3,8 @@
         <Tweet :image="tweets[0].user.image" :name="tweets[0].user.name" :handle="tweets[0].user.handle"
         :message="tweets[0].message" :timestamp="tweets[0].timestamp"
         /> 
-        <Props v-for="Tweet in tweets" :name="Tweet.user.name" :image="Tweet.user.image" 
-        :handle="Tweet.user.handle" :timestamp="Tweet.timestamp" :message="Tweet.message" />
+        <!-- <Props v-for="Tweet in tweets" :name="Tweet.user.name" :image="Tweet.user.image" 
+        :handle="Tweet.user.handle" :timestamp="Tweet.timestamp" :message="Tweet.message" /> -->
     </div>
 
 </template>

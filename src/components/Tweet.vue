@@ -1,6 +1,6 @@
 <template>
     <div class="tweet">
-        <img :image="user.image" class="profile" alt="profile" />
+        <ProfileImage :image="user.image" />
         
         
         <div class="body">
@@ -32,7 +32,7 @@
 <script setup>
 const props = defineProps({
     name: String,
-    img: String,
+    image: String,
     handle: String,
     timestamp: String,
     message: String
