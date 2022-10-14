@@ -1,7 +1,12 @@
 <template>
     <div class="app">
-        <Tweet />
+        <Tweet :image="tweets[0].user.image" :name="tweets[0].user.name" :handle="tweets[0].user.handle"
+        :message="tweets[0].message" :timestamp="tweets[0].timestamp"
+        /> 
+        <Props v-for="Tweet in tweets" :name="Tweet.user.name" :image="Tweet.user.image" 
+        :handle="Tweet.user.handle" :timestamp="Tweet.timestamp" :message="Tweet.message" />
     </div>
+
 </template>
   
 <script setup>
@@ -35,6 +40,7 @@ const tweets = [
         message: "here is what. i plan to accomplish today: \n\n2. bark loudly. but at nothing \n7. lose my ball under the couch\n7b. politely ask the human. to get my ball\n3. immediately lose it again. under the same couch\n4. big nap. you have worked hard\n2. repeat",
     },
 ]
+
 </script>
   
 <style>
