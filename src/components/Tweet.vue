@@ -6,8 +6,6 @@
       <div class="top">
         <User userData="user" :name="props.name" :handle="props.handle"/>
         <Timestamp :timestamp="props.timestamp"/>
-
-        <span class="timestamp">{{ props.timestamp }}</span>
       </div>
 
       <p class="message">
@@ -29,6 +27,7 @@
 <script setup>
 import ProfileImage from './ProfileImage.vue'
 import User from './/User.vue'
+import Timestamp from './Timestamp.vue'
 
 const props = defineProps({
   name: String,
